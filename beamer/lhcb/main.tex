@@ -1,0 +1,44 @@
+\documentclass[10pt,t,serif]{beamer}
+\usetheme{scph-lhcb}
+\usepackage{tikz}
+
+\include{symbols-def}
+\include{python}
+%\include{cpp}
+\fboxsep=2pt%padding thickness%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fboxrule=1.5pt%border thickness
+
+
+\setbeamersize{text margin left=3ex}
+\setbeamersize{text margin right=3ex}
+
+
+\title{Title}
+\author[S.~Hall]{Sam Hall}
+\institute[I.C.L.]{Imperial College London}
+\date{\today}
+
+
+\setbeamercovered{transparent}
+\newcounter{countA}
+
+\newcommand\plotpage{\stepcounter{countA}\Roman{countA}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[c]
+\titlepage
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[c]\frametitle{Overview}
+%\tableofcontents
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{slides}
+%\input{backup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
